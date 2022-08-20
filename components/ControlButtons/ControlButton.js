@@ -1,10 +1,13 @@
 import { IconButton } from '@mui/material';
 
-const ControlButton = ({ Icon }) => {
+const ControlButton = ({ Icon, title }) => {
 	return (
-		<div>
+		<IconButton
+			title={title}
+			className="p-4 rounded-full text-gray-500 bg-gray-200 dark:text-gray-100 dark:bg-[#222]"
+		>
 			<Icon />
-		</div>
+		</IconButton>
 	);
 }
 

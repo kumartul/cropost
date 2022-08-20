@@ -12,6 +12,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@heroicons/react": "^1.0.6",
+    "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
     "next": "12.2.5",
     "next-themes": "^0.2.0",

@@ -3,9 +3,26 @@ import { Button } from "@mui/material";
 import { AiOutlineDelete } from 'react-icons/ai';
 import { FiDownload } from 'react-icons/fi';
 
-const Card = ({ imagePreview, imageName, imageType, deleteImage }) => {
+const Card = ({ imagePreview, imageName, imageType, deleteImage, width, height }) => {
 	return (
 		<div className="flex-[0.2] flex flex-col space-y-4 h-[79vh] bg-[#d3d3d3] dark:bg-[#1a1a1a] rounded-lg p-2 mr-2">
+			<div>
+				<h2 className="text-gray-700 dark:text-gray-300 text-xl font-semibold">Dimensions</h2>
+
+				<div className="flex items-center space-x-4 text-lg mt-2 text-gray-800 dark:text-gray-300">
+					<div className="flex flex-col items-center space-y">
+						<span className="font-bold">{width}</span>
+						<span>Width</span>
+					</div>
+					<div>
+						X
+					</div>
+					<div className="flex flex-col items-center space-y">
+						<span className="font-bold">{height}</span>
+						<span>Height</span>
+					</div>
+				</div>
+			</div>
 			<div>
 				<h2 className="text-gray-700 dark:text-gray-300 text-xl font-semibold">Image Preview</h2>
 

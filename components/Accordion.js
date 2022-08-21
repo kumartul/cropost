@@ -1,7 +1,12 @@
-import { Accordion as MuiAccordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { useState } from 'react';
+
+import { Accordion as MuiAccordion, AccordionSummary, AccordionDetails, Input, Button } from "@mui/material";
 import { ExpandMore } from "@mui/icons-material";
 
 const Accordion = ({ resolutions, onResolutionChange }) => {
+	const [width, setWidth] = useState(0);
+	const [height, setHeight] = useState(0);
+
 	return (
 		<div className="flex-[0.2] h-[79vh] bg-[#d3d3d3] dark:bg-[#1a1a1a] rounded-lg ml-2 overflow-y-scroll">
 			{
@@ -44,8 +49,31 @@ const Accordion = ({ resolutions, onResolutionChange }) => {
 					<h2 className="text-gray-700 dark:text-gray-300 font-semibold">Custom</h2>
 				</AccordionSummary>
 
-				<AccordionDetails>
+				<AccordionDetails className="flex flex-col space-y-2">
+					<div>
+						Width:&nbsp;&nbsp;&nbsp;
+						<Input
+							type="number"
+							value={width}
+							onChange={event => setWidth(event.target.value)}
+						/>
+					</div>
 
+					<div>
+						Height:&nbsp;&nbsp;
+						<Input
+							type="number"
+							value={height}
+							onChange={event => setHeight(event.target.value)}
+						/>
+					</div>
+
+					<Button
+						className="!normal-case !text-[16px] !text-white !bg-green-600 hover:!bg-green-700"
+						onClick={() => onResolutionChange('Custom', 'Custom Resolution', width, height)}
+					>
+						Done!
+					</Button>
 				</AccordionDetails>
 			</MuiAccordion>
 		</div>

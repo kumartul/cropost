@@ -118,6 +118,32 @@ const Home = () => {
 	return (
 		<div>
 			<Head>
+				{/* Required meta tags */}
+				<meta charset="UTF-8" />
+				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta name="description" content="Best Image Cropper for Content Creators" />
+				<meta name="keywords" content="image, cropper, image cropper, content, creators, images, cropost" />
+				<meta name="author" content="Atul Kumar" />
+
+				{/* Open Graph Meta Tags */}
+				<meta property="og:title" content="Cropost ✂️" />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://cropost.vercep.app" />
+				<meta property="og:image" content="https://cropost.vercel.app/mockup.png" />
+				<meta property="og:description" content="" />
+				<meta property="og:site_name" content="Cropost" />
+				<meta property="og:locale" content="en_US" />
+
+				{/* Twitter Meta Tags */}
+				<meta property="twitter:card" content="summary" />
+				<meta property="twitter:title" content="Cropost" />
+				<meta property="twitter:description" content="The best Image Cropper for Content Creators ✂️" />
+				<meta property="twitter:image" content="https://cropost.vercel.app/favicon.ico" />
+				<meta property="twitter:image:alt" content="Cropost Logo" />
+				<meta property="twitter:site" content="@kumartul001" />
+				<meta property="twitter:creator" content="@kumartul001" />
+
 				<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
 				<title>Cropost - Image Cropper for Content Creators in the Cloud</title>

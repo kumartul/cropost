@@ -2,7 +2,7 @@ import { UploadIcon } from '@heroicons/react/outline';
 
 const ImageSelector = ({ onChange }) => {
 	return (
-		<div className="w-full h-[75vh] m-4 flex flex-col items-center justify-center border-dashed border-4 border-gray-400">
+		<div className="w-full h-[75vh] m-4 flex flex-col items-center justify-center border-dashed border-4 border-gray-400 rounded-lg">
 			<label
 				htmlFor="image-selector"
 				className="cursor-pointer flex flex-col space-y-8 items-center justify-center w-full h-full"

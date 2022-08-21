@@ -13,7 +13,7 @@ const Footer = () => {
 
 				<div className="flex items-center space-x-2">
 					<a
-						href="https://twitter.com/intent/tweet?text=Checkout%20musicode.vercel.app%20by%20@kumartul001%0A%0AMusic%20🎵%20to%20keep%20you%20on%20while%20coding%20💻"
+						href="https://twitter.com/intent/tweet?text=Checkout%20cropost.vercel.app%20by%20@kumartul001%0A%0AThe%20Best%20Image%20Cropper%20for%20Content%20Creators"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

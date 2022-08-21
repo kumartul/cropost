@@ -5,7 +5,7 @@ const ControlButton = ({ Icon, title, onClick }) => {
 		<IconButton
 			title={title}
 			onClick={onClick}
-			className="p-4 rounded-full !text-gray-500 bg-gray-200 dark:!text-gray-100 dark:bg-[#222]"
+			className="p-4 rounded-full !text-gray-700 !bg-gray-300 hover:!bg-gray-200 dark:!text-gray-200 dark:!bg-[#2a2a2a] dark:hover:!bg-[#2f2f2f]"
 		>
 			<Icon />
 		</IconButton>

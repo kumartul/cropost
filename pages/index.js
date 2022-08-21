@@ -127,7 +127,7 @@ const Home = () => {
 							<div className="relative flex-[0.6] flex flex-col justify-evenly p-4 h-[79vh] bg-[#ddd] dark:bg-[#222] rounded-lg">
 								<Cropper
 									src={imageSrc}
-									className="!h-[70vh] w-full"
+									className="!h-auto w-full"
 									aspectRatio={dragArea.width / dragArea.height}
 									guides={true}
 									crop={onCrop}

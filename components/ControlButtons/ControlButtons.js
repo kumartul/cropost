@@ -50,7 +50,7 @@ const ControlButtons = ({ cropper }) => {
 	const reset = () => cropper.reset();
 
 	return (
-		<div className="mt-24 flex items-center justify-center space-x-4">
+		<div className="mt-24 flex items-center justify-center space-x-4 absolute bottom-2 left-0 right-0">
 			<ControlButton
 				Icon={BiZoomIn}
 				title="Zoom In"

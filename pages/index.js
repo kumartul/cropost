@@ -31,6 +31,10 @@ const Home = () => {
 	const [y, setY] = useState(0);
 	const [activeResolution, setActiveResolution] = useState("");
 	const [activeResolutionDescription, setActiveResolutionDescription] = useState("");
+	const [resolution, setResolution] = useState({
+		width: 0,
+		height: 0
+	});
 
 	const cropperRef = useRef(null);
 
@@ -41,6 +45,10 @@ const Home = () => {
 		setActiveResolutionDescription(resolutions[0]["GitHub"][0].description);
 
 		setDragArea({
+			width: resolutions[0]["GitHub"][0].width,
+			height: resolutions[0]["GitHub"][0].height
+		});
+		setResolution({
 			width: resolutions[0]["GitHub"][0].width,
 			height: resolutions[0]["GitHub"][0].height
 		});
@@ -95,6 +103,10 @@ const Home = () => {
 			width: width,
 			height: height
 		});
+		setResolution({
+			width: width,
+			height: height
+		});
 		cropper.setData({
 			width,
 			height,
@@ -127,12 +139,13 @@ const Home = () => {
 							<div className="relative flex-[0.6] flex flex-col justify-evenly p-4 h-[79vh] bg-[#ddd] dark:bg-[#222] rounded-lg">
 								<Cropper
 									src={imageSrc}
-									className="!h-auto w-full"
-									aspectRatio={dragArea.width / dragArea.height}
+									className="!h-[480px] !w-full"
+									aspectRatio={resolution.width / resolution.height}
 									guides={true}
 									crop={onCrop}
 									ref={cropperRef}
 									viewMode={2}
+									preview=".preview"
 									onInitialized={onCropperInitialized}
 								/>
 

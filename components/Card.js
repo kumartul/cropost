@@ -29,7 +29,7 @@ const Card = ({ imagePreview, imageName, imageType, deleteImage, width, height }
 				<img
 					src={imagePreview}
 					alt="Preview"
-					className="border-2 border-gray-600 dark:border-gray-500 border-dashed rounded-md mt-2"
+					className="border-2 border-gray-600 dark:border-gray-500 border-dashed rounded-md mt-2 h-[200px] w-full"
 				/>
 			</div>
 

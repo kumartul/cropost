@@ -257,7 +257,48 @@ const resolutions = [
 			},
 		],
 	},
-
+	{
+		Google: [
+			{
+				name: "Profile Avatar",
+				description: "Your Profile Avatar picture",
+				width: 720,
+				height: 720
+			}
+		]
+	},
+	{
+		Snapchat: [
+			{
+				name: "Snapchat Ads",
+				description: "Snapchat Ads",
+				width: 1080,
+				height: 1920,
+			},
+			{
+				name: "Snapchat Geofilter",
+				description: "Snapchat Geofilter Image",
+				width: 1080,
+				height: 1920,
+			}
+		]
+	},
+	{
+		Tiktok: [
+			{
+				name: "Tiktok Thumbnail",
+				description: "Tiktok Thumbnail",
+				width: 1280,
+				height: 720
+			},
+			{
+				name: "Tiktok Proile Photo",
+				description: "Tiktok Profile Photo",
+				width: 200,
+				height: 200
+			}
+		]
+	}
 ];
 
 export default resolutions;

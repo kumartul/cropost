@@ -33,7 +33,7 @@ const Accordion = ({ resolutions, onResolutionChange }) => {
 											defaultChecked={index === 0 && _index === 0}
 											onChange={() => onResolutionChange(Object.keys(resolution)[0], dimension.description, dimension.width, dimension.height)}
 										/>
-										<label for={`item_${index}${_index}`}>{dimension.name}</label>
+										<label htmlFor={`item_${index}${_index}`}>{dimension.name}</label>
 									</div>
 								))
 							}

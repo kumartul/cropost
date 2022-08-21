@@ -292,7 +292,7 @@ const resolutions = [
 				height: 720
 			},
 			{
-				name: "Tiktok Proile Photo",
+				name: "Tiktok Profile Photo",
 				description: "Tiktok Profile Photo",
 				width: 200,
 				height: 200

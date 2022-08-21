@@ -100,18 +100,18 @@ const Home = () => {
 		setActiveResolution(title);
 		setActiveResolutionDescription(description);
 		setDragArea({
-			width: width,
-			height: height
+			width,
+			height
 		});
 		setResolution({
-			width: width,
-			height: height
+			width,
+			height
 		});
 		cropper.setData({
 			width,
 			height,
 			x: (883 - width) / 2,
-			y: (500 - height) / 2
+			y: (480 - height) / 2
 		});
 	}
 
